@@ -28,7 +28,6 @@ a = []
 [a.append(x.name) for x in humans if x.name[0] == 'D']
 
 print(a)
-print(len(humans[0].name))
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name ends in "e".
@@ -67,7 +66,7 @@ print(e)
 # inclusive.
 print("Names and ages between 27 and 32:")
 f = []
-[f.append((x.name, x.age)) for x in humans if x.age >= 27 or x.age <= 32 ]
+[f.append((x.name, x.age)) for x in humans if x.age >= 27 and x.age <= 32 ]
 print(f)
 
 # Write a list comprehension that creates a list of new Humans like the old
